@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reddit-like Site</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="app">
+		<!-- Top Subreddits Bar -->
+		<div class="sr-bar">
+			<div class="sr-list">
+				<span class="my-subreddits">MY SUBREDDITS <i class="dropdown-icon">▼</i></span>
+				<span class="separator">-</span>
+				<a href="#" class="selected popular-link">POPULAR</a>
+				<span class="separator">-</span>
+				<a href="#">ALL</a>
+				<span class="separator">-</span>
+				<a href="#">USERS</a>
+				<span class="separator">|</span>
+				<a href="#">ASKREDDIT</a>
+				<span class="separator">-</span>
+				<a href="#">PICS</a>
+				<span class="separator">-</span>
+				<a href="#">FUNNY</a>
+				<span class="separator">-</span>
+				<a href="#">MOVIES</a>
+				<span class="separator">-</span>
+				<a href="#">GAMING</a>
+				<span class="separator">-</span>
+				<a href="#">WORLDNEWS</a>
+				<span class="separator">-</span>
+				<a href="#">NEWS</a>
+				<span class="separator">-</span>
+				<a href="#">TODAYILEARNED</a>
+				<span class="more">MORE »</span>
+			</div>
+		</div>
+
+		<!-- Main Header -->
+		<header class="main-header">
+			<div class="header-content">
+				<a href="#" class="reddit-logo">
+					<img src="https://www.redditstatic.com/reddit.com.header.png" alt="Reddit Logo" height="40">
+				</a>
+				<nav class="tab-menu">
+					<ul>
+						<li><a href="#" class="selected hot-tab">hot</a></li>
+						<li><a href="#">new</a></li>
+						<li><a href="#">rising</a></li>
+						<li><a href="#">controversial</a></li>
+						<li><a href="#">top</a></li>
+						<li><a href="#">wiki</a></li>
+					</ul>
+				</nav>
+				<div class="user-tools">
+					<div class="join-prompt">
+						Want to join? <a href="#" class="login">Log in</a> or <a href="#" class="signup">sign up</a> in seconds
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main Grid Layout -->
+		<div class="grid-layout">
+			<!-- Left Column -->
+			<div class="main-column">
+				<!-- Welcome Banner -->
+				<div class="welcome-banner">
+					<div class="welcome-content">
+						<h1 class="welcome-title">Welcome to Reddit.</h1>
+						<p class="welcome-subtitle">Come for the cats, stay for the empathy.</p>
+						<div class="welcome-action">
+							<a href="#" class="become-redditor-button">BECOME A REDDITOR</a>
+							<span class="welcome-text">and start exploring.</span>
+						</div>
+					</div>
+					<button class="close-button">×</button>
+				</div>
+
+				<!-- Popular Location -->
+				<div class="popular-location">
+					<span>popular in: </span>
+					<strong>United Kingdom</strong>
+					<i>▼</i>
+				</div>
+
+				<!-- Entries -->
+				<div class="entries">
+					<!-- Entry 1 -->
+					<div class="entry">
+						<div class="numbering">1</div>
+						<div class="voting">
+							<a href="#" class="upvote">▲</a>
+							<span class="count">247</span>
+							<a href="#" class="downvote">▼</a>
+						</div>
+						<div class="topic">
+							<div class="title">
+								<a href="#" class="link">2025 Bahrain GP - Race Discussion</a>
+								<span class="race-tag">Race</span>
+								<span class="domain">(self.formula1)</span>
+							</div>
+							<div class="details">
+								<div class="inner-details">
+									<span>submitted 4 hours ago by</span>
+									<a href="#" class="user">AutoModerator</a>
+									<span>to</span>
+									<a href="#" class="subreddit-link">r/formula1</a>
+								</div>
+								<div class="action-detail">
+									<a href="#">23030 comments</a>
+									<a href="#">share</a>
+									<a href="#">save</a>
+									<a href="#">hide</a>
+									<a href="#">report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Entry 2 -->
+					<div class="entry">
+						<div class="numbering">2</div>
+						<div class="voting">
+							<a href="#" class="upvote">▲</a>
+							<span class="count">1833</span>
+							<a href="#" class="downvote">▼</a>
+						</div>
+						<div class="topic">
+							<div class="title">
+								<a href="#" class="link">Number of overweight teens in England has soared by 50% since 2008</a>
+								<span class="domain">(independent.co.uk)</span>
+							</div>
+							<div class="details">
+								<div class="inner-details">
+									<span>submitted 3 hours ago by</span>
+									<a href="#" class="user">tyler-the-theatre</a>
+									<span>to</span>
+									<a href="#" class="subreddit-link">r/unitedkingdom</a>
+								</div>
+								<div class="action-detail">
+									<a href="#">707 comments</a>
+									<a href="#">share</a>
+									<a href="#">save</a>
+									<a href="#">hide</a>
+									<a href="#">report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Right Column -->
+			<div class="side-column">
+				<!-- Search Box -->
+				<div class="search-box">
+					<form class="search-form">
+						<input type="text" placeholder="search">
+					</form>
+				</div>
+
+				<!-- Submit Buttons -->
+				<div class="submit-buttons">
+					<a href="#" class="btn-entry">Submit a new link</a>
+					<a href="#" class="btn-entry">Submit a new text post</a>
+				</div>
+				
+				<!-- Reddit Premium Card -->
+				<div class="ct-reddit-card">
+					<div class="premium-header">
+						<img src="https://www.redditstatic.com/desktop2x/img/gold/premium-banner@2x.png" alt="Reddit Premium" class="premium-banner">
+					</div>
+					<p>Get an ad-free experience with special benefits, and directly support Reddit.</p>
+					<a href="#" class="get-premium-button">Get Reddit Premium</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
